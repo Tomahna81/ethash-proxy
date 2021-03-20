@@ -8,8 +8,8 @@ import (
 	"sync"
 	"os"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/rpc"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/util"
+	"github.com/Tomahna81/ethash-proxy/rpc"
+	"github.com/Tomahna81/ethash-proxy/util"
 )
 
 const maxBacklog = 3
