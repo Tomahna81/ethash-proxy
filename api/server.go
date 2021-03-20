@@ -12,8 +12,8 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/storage"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/util"
+	"github.com/Tomahna81/ethash-proxy/storage"
+	"github.com/Tomahna81/ethash-proxy/util"
 )
 
 type ApiConfig struct {
