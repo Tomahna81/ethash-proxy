@@ -1,11 +1,11 @@
 package proxy
 
 import (
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/api"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/exchange"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/payouts"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/policy"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/storage"
+	"github.com/Tomahna81/ethash-proxy/api"
+	"github.com/Tomahna81/ethash-proxy/exchange"
+	"github.com/Tomahna81/ethash-proxy/payouts"
+	"github.com/Tomahna81/ethash-proxy/policy"
+	"github.com/Tomahna81/ethash-proxy/storage"
 )
 
 type Config struct {
