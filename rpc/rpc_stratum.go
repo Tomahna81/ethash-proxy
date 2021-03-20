@@ -21,8 +21,8 @@ import (
 	//"github.com/ethereum/go-ethereum/common"
 	//"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/util"
-	//"github.com/Tomahna81/ethash-mining-stratum-proxy/proxy"
+	"github.com/Tomahna81/ethash-proxy/util"
+	//"github.com/Tomahna81/ethash-proxy/proxy"
 )
 
 type StratumReq struct {
