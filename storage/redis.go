@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/util"
+	"github.com/Tomahna81/ethash-proxy/util"
 	"gopkg.in/redis.v3"
 	"log"
 )
