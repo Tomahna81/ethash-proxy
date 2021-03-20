@@ -1,0 +1,143 @@
+{
+	"threads": 2,
+	"coin": "ethereum-pplns",
+	"name": "main",
+	"pplns": 1000000,
+	"coin-name":"ETH",
+
+	"proxy": {
+		"enabled": true,
+		"user": "AN ETH WALLET",
+		"password": "",
+		"listen": "127.0.0.1:40001",
+		"limitHeadersSize": 1024,
+		"limitBodySize": 256,
+		"behindReverseProxy": false,
+		"blockRefreshInterval": "70ms",
+		"stateUpdateInterval": "3s",
+		"difficulty": 1000000000,
+		"hashrateExpiration": "3h",
+
+		"healthCheck": true,
+		"maxFails": 100,
+
+		"stratum": {
+			"enabled": false,
+			"listen": "0.0.0.0:7777",
+			"timeout": "120s",
+			"maxConn": 10
+		},
+
+		"stratum_ssl": {
+			"enabled": true,
+			"listen": "0.0.0.0:7777",
+			"timeout": "120s",
+			"maxConn": 10,
+			"certfile": "pub.crt",
+			"certkey": "priv.key"
+
+
+		},
+
+		"stratum_nice_hash": {
+			"enabled": false,
+			"listen": "0.0.0.0:40021",
+			"timeout": "120s",
+			"maxConn": 10
+		},
+
+		"policy": {
+			"workers": 8,
+			"resetInterval": "600m",
+			"refreshInterval": "10m",
+
+			"banning": {
+				"enabled": false,
+				"ipset": "blacklist",
+				"timeout": 300,
+				"invalidPercent": 30,
+				"checkThreshold": 30,
+				"malformedLimit": 50
+			},
+			"limits": {
+				"enabled": false,
+				"limit": 30,
+				"grace": "5m",
+				"limitJump": 10
+			}
+		}
+	},
+
+	"api": {
+		"enabled": false,
+		"purgeOnly": false,
+		"purgeInterval": "10m",
+		"listen": "192.168.0.15:8080",
+		"statsCollectInterval": "5s",
+		"hashrateWindow": "30m",
+		"hashrateLargeWindow": "3h",
+		"luckWindow": [64, 128, 256],
+		"payments": 30,
+		"blocks": 50
+	},
+
+	"upstreamCheckInterval": "5s",
+	"upstream": [
+		{
+			"name": "ethermine",
+			"url": "172.65.231.156",
+			"port": "4444",
+			"timeout": "10s",
+			"username": "FOR THE POOL"
+		}
+	],
+
+	"redis": {
+		"endpoint": "127.0.0.1:6379",
+		"poolSize": 100,
+		"database": 0,
+		"password": "PASSWORD"
+	},
+
+	"unlocker": {
+		"enabled": false,
+		"poolFee": 0.9,
+		"poolFeeAddress": "AN ETH ADDRESS",
+		"donate": false,
+		"depth": 120,
+		"immatureDepth": 20,
+		"keepTxFees": true,
+		"interval": "15m",
+		"daemon": "http://127.0.0.1:8545",
+		"timeout": "10s"
+	},
+
+	"payouts": {
+		"enabled": false,
+		"requirePeers": 5,
+		"interval": "120m",
+		"daemon": "http://127.0.0.1:8545",
+		"timeout": "10s",
+		"address": "AN ETH ADDRESS",
+		"gas": "21000",
+		"gasPrice": "20000000000",
+		"autoGas": true,
+		"keepNwFees": true,
+		"nwTxGas": "21000",
+		"nwTxGasPrice": "20000000000",
+		"threshold": 100000000,
+		"bgsave": false
+	},
+
+	"exchange": {
+		"enabled": false,
+		"url": "https://api.coinmarketcap.com/v1/ticker/?convert=USD",
+		"timeout": "50s",
+		"refreshInterval": "1800s"
+	},
+
+	"newrelicEnabled": false,
+	"newrelicName": "",
+	"newrelicKey": "b30cd005408cbe2bcef6e081dc0a7ea2fe6c6a18",
+	"newrelicVerbose": false
+}
