@@ -11,10 +11,10 @@ fi
 workspace="$PWD/build/_workspace"
 root="$PWD"
 ethdir="$workspace/src/github.com/Tomahna81"
-if [ ! -L "$ethdir/ethash-mining-stratum-proxy" ]; then
+if [ ! -L "$ethdir/ethash-proxy" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"
-    ln -s ../../../../../. ethash-mining-stratum-proxy
+    ln -s ../../../../../. ethash-proxy
     cd "$root"
 fi
 
@@ -25,8 +25,8 @@ GOBIN="$PWD/build/bin"
 export GOPATH GOBIN
 
 # Run the command inside the workspace.
-cd "$ethdir/ethash-mining-stratum-proxy"
-PWD="$ethdir/ethash-mining-stratum-proxy"
+cd "$ethdir/ethash-proxy"
+PWD="$ethdir/ethash-proxy"
 
 # Launch the arguments with the configured environment.
 exec "$@"
