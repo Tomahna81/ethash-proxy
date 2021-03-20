@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/rpc"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/storage"
+	"github.com/Tomahna81/ethash-proxy/rpc"
+	"github.com/Tomahna81/ethash-proxy/storage"
 )
 
 func TestMain(m *testing.M) {
