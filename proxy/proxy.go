@@ -13,11 +13,11 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/policy"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/rpc"
-	//"github.com/Tomahna81/ethash-mining-stratum-proxy/rpc_stratum"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/storage"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/util"
+	"github.com/Tomahna81/ethash-proxy/policy"
+	"github.com/Tomahna81/ethash-proxy/rpc"
+	//"github.com/Tomahna81/ethash-proxy/rpc_stratum"
+	"github.com/Tomahna81/ethash-proxy/storage"
+	"github.com/Tomahna81/ethash-proxy/util"
 )
 
 type ProxyServer struct {
