@@ -15,7 +15,7 @@ import (
 	//"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/util"
+	"github.com/Tomahna81/ethash-proxy/util"
 )
 
 type RPCClient struct {
