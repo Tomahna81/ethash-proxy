@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/rpc"
-	"github.com/Tomahna81/ethash-mining-stratum-proxy/util"
+	"github.com/Tomahna81/ethash-proxy/rpc"
+	"github.com/Tomahna81/ethash-proxy/util"
 )
 
 // Allow only lowercase hexadecimal with 0x prefix
