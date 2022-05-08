@@ -11,7 +11,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 )
 
-var hasher = ethash.New()
+//var hasher = ethash.New()
+var hasher = ethash.init()
 
 func (s *ProxyServer) processShare(login, id, ip string, t *BlockTemplate, params []string) (bool, bool) {
 	nonceHex := params[0]
@@ -34,9 +35,9 @@ func (s *ProxyServer) processShare(login, id, ip string, t *BlockTemplate, param
 		nonce:       nonce,
 		mixDigest:   common.HexToHash(mixDigest),
 	}
-	if !hasher.Verify(share) {
-		return false, false
-	}
+	//if !hasher.Verify(share) {
+	//	return false, false
+	//}
 
 	//Write the Ip address into the settings:login:ipaddr and timeit added to settings:login:iptime hash
 	s.backend.LogIP(login,ip)
