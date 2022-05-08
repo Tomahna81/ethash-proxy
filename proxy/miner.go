@@ -6,13 +6,13 @@ import (
 	"strconv"
 	"strings"
 
-	//"github.com/ethereum/ethash"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
+	"github.com/ethereum/ethash"
+	//"github.com/ethereum/go-ethereum/consensus/ethash"
 	"github.com/ethereum/go-ethereum/common"
 )
 
-//var hasher = ethash.New()
-var hasher = ethash.init()
+var hasher = ethash.New()
+//var hasher = ethash.init()
 
 func (s *ProxyServer) processShare(login, id, ip string, t *BlockTemplate, params []string) (bool, bool) {
 	nonceHex := params[0]
