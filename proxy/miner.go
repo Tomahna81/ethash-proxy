@@ -15,10 +15,10 @@ var hasher = ethash.New()
 //var hasher = ethash.init()
 
 func (s *ProxyServer) processShare(login, id, ip string, t *BlockTemplate, params []string) (bool, bool) {
-	nonceHex := params[0]
+	//nonceHex := params[0]
 	hashNoNonce := params[1]
-	mixDigest := params[2]
-	nonce, _ := strconv.ParseUint(strings.Replace(nonceHex, "0x", "", -1), 16, 64)
+	//mixDigest := params[2]
+	//nonce, _ := strconv.ParseUint(strings.Replace(nonceHex, "0x", "", -1), 16, 64)
 	shareDiff := s.config.Proxy.Difficulty
 
 	h, ok := t.headers[hashNoNonce]
