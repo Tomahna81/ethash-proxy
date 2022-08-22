@@ -28,13 +28,13 @@ func (s *ProxyServer) processShare(login, id, ip string, t *BlockTemplate, param
 		return false, false
 	}
 
-	share := Block{
-		number:      h.height,
-		hashNoNonce: common.HexToHash(hashNoNonce),
-		difficulty:  big.NewInt(shareDiff),
-		nonce:       nonce,
-		mixDigest:   common.HexToHash(mixDigest),
-	}
+	//share := Block{
+	//	number:      h.height,
+	//	hashNoNonce: common.HexToHash(hashNoNonce),
+	//	difficulty:  big.NewInt(shareDiff),
+	//	nonce:       nonce,
+	//	mixDigest:   common.HexToHash(mixDigest),
+	//}
 	//if !hasher.Verify(share) {
 	//	return false, false
 	//}
