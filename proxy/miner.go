@@ -2,13 +2,13 @@ package proxy
 
 import (
 	"log"
-	"math/big"
+	//"math/big"
 	"strconv"
 	"strings"
 
 	"github.com/ethereum/ethash"
 	//"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/common"
+	//"github.com/ethereum/go-ethereum/common"
 )
 
 var hasher = ethash.New()
