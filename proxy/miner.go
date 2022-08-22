@@ -3,8 +3,8 @@ package proxy
 import (
 	"log"
 	//"math/big"
-	"strconv"
-	"strings"
+	//"strconv"
+	//"strings"
 
 	"github.com/ethereum/ethash"
 	//"github.com/ethereum/go-ethereum/consensus/ethash"
